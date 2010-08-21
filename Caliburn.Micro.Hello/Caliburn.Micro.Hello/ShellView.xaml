@@ -10,8 +10,7 @@
     
     <StackPanel>
         <TextBox x:Name="Name" />
-        <Button x:Name="SayHello"
-                Content="Click Me">
+        <Button Content="Click Me">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <cal:ActionMessage MethodName="SayHello"  />
