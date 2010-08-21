@@ -81,6 +81,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="HelloBootstrapper.cs" />
+    <Compile Include="IShell.cs" />
+    <Compile Include="MefBootstrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>

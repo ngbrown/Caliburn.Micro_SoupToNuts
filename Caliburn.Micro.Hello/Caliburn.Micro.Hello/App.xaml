@@ -4,6 +4,6 @@
              x:Class="Caliburn.Micro.Hello.App"
              >
     <Application.Resources>
-        <local:HelloBootstrapper x:Key="bootstrapper" />
+        <local:MefBootstrapper x:Key="mefbootstrapper" />
     </Application.Resources>
 </Application>
