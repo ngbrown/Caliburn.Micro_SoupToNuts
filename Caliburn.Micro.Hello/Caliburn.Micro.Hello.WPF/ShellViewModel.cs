@@ -1,8 +1,10 @@
 namespace Caliburn.Micro.Hello.WPF
 {
+    using System.ComponentModel.Composition;
     using System.Windows;
 
-    public class ShellViewModel : PropertyChangedBase
+    [Export(typeof(IShell))]
+    public class ShellViewModel : PropertyChangedBase, IShell
     {
         string name;
 
