@@ -7,7 +7,7 @@ namespace Caliburn.Micro.Hello.WPF
     using System.ComponentModel.Composition.Primitives;
     using System.Linq;
 
-    public class MefBootstrapper : Bootstrapper<IShell>
+    public class MefBootstrapper : Bootstrapper
     {
         private CompositionContainer container;
 
@@ -47,6 +47,12 @@ namespace Caliburn.Micro.Hello.WPF
         protected override void BuildUp(object instance)
         {
             container.SatisfyImportsOnce(instance);
+        }
+
+        protected override void DisplayRootView()
+        {
+            var shell = new ShellView();
+            shell.Show();
         }
     }
 }

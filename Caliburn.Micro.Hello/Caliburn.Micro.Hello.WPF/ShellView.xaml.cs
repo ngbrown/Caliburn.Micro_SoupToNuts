@@ -17,7 +17,7 @@ namespace Caliburn.Micro.Hello.WPF
     /// <summary>
     /// Interaction logic for ShellView.xaml
     /// </summary>
-    public partial class ShellView : UserControl
+    public partial class ShellView : Window
     {
         public ShellView()
         {
