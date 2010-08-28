@@ -68,9 +68,18 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainPageViewModel.cs" />
+    <Compile Include="PageTwo.xaml.cs">
+      <DependentUpon>PageTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageTwoViewModel.cs" />
     <Compile Include="PhoneContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleContainer.cs" />
+    <Compile Include="TabView.xaml.cs">
+      <DependentUpon>TabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -78,6 +87,14 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageTwo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
