@@ -6,27 +6,14 @@ namespace Caliburn.Micro.Hello.WPF
     [Export(typeof(IShell))]
     public class ShellViewModel : PropertyChangedBase, IShell
     {
-        string name;
-
-        public string Name
+        public bool CanSayHello(string name)
         {
-            get { return name; }
-            set
-            {
-                name = value;
-                NotifyOfPropertyChange(() => Name);
-                NotifyOfPropertyChange(() => CanSayHello);
-            }
+            return !string.IsNullOrWhiteSpace(name);
         }
 
-        public bool CanSayHello
+        public void SayHello(string name)
         {
-            get { return !string.IsNullOrWhiteSpace(Name); }
-        }
-
-        public void SayHello()
-        {
-            MessageBox.Show(string.Format("Hello {0}!", Name)); //Don't do this.  
+            MessageBox.Show(string.Format("Hello {0}!", name));
         }
     }
 }

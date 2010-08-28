@@ -13,7 +13,9 @@
                 Content="Click Me">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
-                    <cal:ActionMessage MethodName="SayHello"  />
+                    <cal:ActionMessage MethodName="SayHello">
+                        <cal:Parameter Value="{Binding ElementName=Name, Path=Text}" />
+                    </cal:ActionMessage>
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </Button>
