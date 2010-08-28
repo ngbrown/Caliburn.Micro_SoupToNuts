@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="IShell.cs" />
     <Compile Include="MefBootstrapper.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
